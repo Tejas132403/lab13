@@ -13,8 +13,7 @@ const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:3000';
 const MONGODB_URI = process.env.MONGODB_URI || '';
 
 app.use(cors({
-  origin: FRONTEND_URL,
-  credentials: true
+  origin: '*'
 }));
 
 app.use(express.json());
